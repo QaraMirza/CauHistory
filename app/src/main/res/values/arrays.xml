@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "main_menu">
+        <item>Личности</item>
+        <item>География</item>
+        <item>Битвы</item>
+        <item>Государства</item>
+        <item>Хронология</item>
+        <item>Книги</item>
+    </string-array>
+
+    <string-array name = "persons_title">
+        <item>Гази-Мухаммад</item>
+        <item>Хамзат-Бек</item>
+        <item>Шамиль</item>
+        <item>Алибек-Хаджи</item>
+        <item>Нажмуддин Гоцинский</item>
+    </string-array>
+
+    <string-array name = "battles_title">
+        <item>Ахульго</item>
+        <item>Ичкеринское сражение</item>
+        <item>Даргинский поход</item>
+        <item>Шамхальское восстание</item>
+        <item>Битва за Гимры</item>
+    </string-array>
+
+    <string-array name = "ethnoses_title">
+        <item>Аварцы</item>
+        <item>Даргинцы</item>
+        <item>Кумыки</item>
+        <item>Лезгины</item>
+        <item>Лакцы</item>
+    </string-array>
+
+    <string-array name = "geo_types_title">
+        <item>Районы</item>
+        <item>Города</item>
+        <item>Села и поселки</item>
+        <item>Известные и/или красивые места</item>
+    </string-array>
+
+    <string-array name = "districts_title">
+        <item>Акушинский</item>
+        <item>Ахвахский</item>
+        <item>Буйнаксий</item>
+        <item>Хасавюртовский</item>
+    </string-array>
+
+    <string-array name = "cities_title">
+        <item>Махачкала</item>
+        <item>Дербент</item>
+        <item>Буйнакск</item>
+        <item>Хасавюрт</item>
+        <item>Избербаш</item>
+        <item>Дагестанские огни</item>
+        <item>Кизляр</item>
+        <item>Кизилюрт</item>
+        <item>Южно-Сухокумск</item>
+    </string-array>
+---------------------------------------------------------------------------------------------------------------------
+    <string-array name = "persons">
+        <item>Герой Кавказа, поднявший людей на Газават</item>
+        <item>Хамзат-БекТ</item>
+        <item>ШамильТ</item>
+        <item>Алибек-ХаджиТ</item>
+        <item>Нажмуддин ГоцинскийТ</item>
+    </string-array>
+
+    <string-array name = "battles">
+        <item>АхульгоТ</item>
+        <item>Ичкеринское сражениеТ</item>
+        <item>Даргинский походТ</item>
+        <item>Шамхальское восстаниеТ</item>
+        <item>Битва за ГимрыТ</item>
+    </string-array>
+
+    <string-array name = "ethnoses">
+        <item>АварцыТ</item>
+        <item>ДаргинцыТ</item>
+        <item>КумыкиТ</item>
+        <item>ЛезгиныТ</item>
+        <item>ЛакцыТ</item>
+    </string-array>
+
+    <string-array name = "geo_types">
+        <item>РайоныТ</item>
+        <item>ГородаТ</item>
+        <item>Села и поселкиТ</item>
+        <item>Известные и/или красивые местаТ</item>
+    </string-array>
+
+    <string-array name = "districts">
+        <item>АкушинскийТ</item>
+        <item>АхвахскийТ</item>
+        <item>БуйнаксийТ</item>
+        <item>ХасавюртовскийТ</item>
+    </string-array>
+
+    <string-array name = "cities">
+        <item>МахачкалаТ</item>
+        <item>ДербентТ</item>
+        <item>БуйнакскТ</item>
+        <item>ХасавюртТ</item>
+        <item>ИзбербашТ</item>
+        <item>Дагестанские огниТ</item>
+        <item>КизлярТ</item>
+        <item>КизилюртТ</item>
+        <item>Южно-СухокумскТ</item>
+    </string-array>
+
+</resources>
