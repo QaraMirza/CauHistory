@@ -1,6 +1,8 @@
 package com.example.causcasianhistory;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,14 +16,15 @@ import com.example.causcasianhistory.adapter.RecOnClickListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.causcasianhistory.MainActivity;
-
 public class ReviewActivity extends AppCompatActivity {
 
     private RecOnClickListener recOnClickListener;
     private DataAdapter adapter;
     private List<ListItem> listItem;
     private RecyclerView recyclerView;
+    private static String[] array;
+    private static String[] titleArray;
+    private static int[] imageArray;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,11 +38,12 @@ public class ReviewActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         listItem = new ArrayList<>();
-        String[] battleArray = getResources().getStringArray(R.array.battles);
 
-        for(int i = 0; i < battleArray.length; i++) {
+        for(int i = 0; i < 5; i++) {
             ListItem item = new ListItem();
-            item.setText(battleArray[i]);
+            item.setText(array[i]);
+            item.setTitle(titleArray[i]);
+            item.setImage(imageArray[i]);
             listItem.add(item);
         }
 
@@ -57,7 +61,9 @@ public class ReviewActivity extends AppCompatActivity {
         };
     }
 
-    public static void sayHi() {
-
+    public static void getArray(String[] tempArray, String[] tempTitleArray, int[] tempImageArray) {
+        array = tempArray;
+        titleArray = tempTitleArray;
+        imageArray = tempImageArray;
     }
 }

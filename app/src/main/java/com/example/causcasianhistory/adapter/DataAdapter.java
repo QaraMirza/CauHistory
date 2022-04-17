@@ -1,6 +1,7 @@
 package com.example.causcasianhistory.adapter;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataHolder> {
     private Context context;
     private RecOnClickListener recOnClickListener;
     private List<ListItem> listItemArray;
+    private TextView textView;
+    private TextView titleView;
+    private ImageView imageView;
 
     public DataAdapter(Context context, RecOnClickListener recOnClickListener, List<ListItem> listItemArray) {
         this.context = context;
@@ -45,10 +49,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataHolder> {
 
     public class DataHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private TextView textView;
-        private TextView titleView;
-        private ImageView imageView;
-
         public DataHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.itemText);
@@ -59,7 +59,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataHolder> {
         public void setData(ListItem item) {
             textView.setText(item.getText());
             titleView.setText(item.getTitle());
-            imageView.setImageResource(R.drawable.fight);
+            imageView.setImageResource(item.getImage());
         };
 
         @Override

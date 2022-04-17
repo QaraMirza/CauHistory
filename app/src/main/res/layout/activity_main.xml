@@ -28,7 +28,8 @@
                 android:backgroundTint="@color/bg"
                 android:contentDescription="@string/battles"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/fight" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/fight3" />
 
             <ImageButton
                 android:id="@+id/personsButton"
@@ -39,7 +40,20 @@
                 android:backgroundTint="@color/bg"
                 android:contentDescription="@string/persons"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/persons" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/persons2" />
+
+            <ImageButton
+                android:id="@+id/ethnosesButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/bg"
+                android:contentDescription="@string/persons"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ethnoses" />
 
             <ImageButton
                 android:id="@+id/statesButton"
@@ -50,7 +64,8 @@
                 android:backgroundTint="@color/bg"
                 android:contentDescription="@string/states"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/nceflag" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/states" />
 
             <ImageButton
                 android:id="@+id/locationsButton"
@@ -61,23 +76,12 @@
                 android:backgroundTint="@color/bg"
                 android:contentDescription="@string/locations"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/places" />
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="match_parent"
-                android:layout_height="100dp" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/places3" />
 
         </LinearLayout>
     </ScrollView>
 
 <!--    <include layout="@layout/main_content"/>-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/main_green"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@ public class ListItem {
 
     private String title;
     private String text;
-    private String image;
+    private int image;
 
     public String getTitle() {
         return title;
@@ -22,11 +22,11 @@ public class ListItem {
         this.text = text;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(int image) {
         this.image = image;
     }
 }
