@@ -1,5 +1,6 @@
 package com.example.causcasianhistory;
 
+
 public class ImageArrays {
     static int[] iventImages = {
             0,
@@ -18,7 +19,18 @@ public class ImageArrays {
             0,
             R.drawable.imamshamil,
             R.drawable.alibekhadji,
-            R.drawable.gocinsky2
+            R.drawable.gocinsky,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            R.drawable.muradkaplanov,
+            R.drawable.hamzatimragimov,
+            R.drawable.alievshamil,
+            R.drawable.ilmiddinabdulagatov,
+            R.drawable.alievabdula
     };
 
 
@@ -33,9 +45,17 @@ public class ImageArrays {
             0
     };
     static int[] stateImages = {
-            R.drawable.imamate,
+            R.drawable.dagestan,
+            R.drawable.chechnya,
+            R.drawable.kbr,
+            R.drawable.kchr,
+            R.drawable.adygea,
+            R.drawable.dassr,
+            R.drawable.chiassr,
             R.drawable.emirate,
-            0,
+            R.drawable.gorres,
+            R.drawable.imamate,
+            R.drawable.shamkhalate,
             R.drawable.lakflag,
             R.drawable.awarenflag,
             0

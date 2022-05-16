@@ -39,7 +39,7 @@ public class ReviewActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         listItem = new ArrayList<>();
 
-        for(int i = 0; i < 5; i++) {
+        for(int i = 0; i < array.length; i++) {
             ListItem item = new ListItem();
             item.setText(array[i]);
             item.setTitle(titleArray[i]);
