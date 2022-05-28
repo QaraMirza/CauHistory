@@ -1,8 +1,6 @@
 package com.example.causcasianhistory;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,7 +45,7 @@ public class ReviewActivity extends AppCompatActivity {
             listItem.add(item);
         }
 
-        adapter = new DataAdapter(this, recOnClickListener, listItem);
+        adapter = new DataAdapter(recOnClickListener, listItem);
 
         recyclerView.setAdapter(adapter);
     }

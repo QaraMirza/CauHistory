@@ -1,7 +1,5 @@
 package com.example.causcasianhistory.adapter;
 
-import android.content.Context;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,15 +15,10 @@ import java.util.List;
 
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataHolder> {
 
-    private Context context;
-    private RecOnClickListener recOnClickListener;
-    private List<ListItem> listItemArray;
-    private TextView textView;
-    private TextView titleView;
-    private ImageView imageView;
+    private final RecOnClickListener recOnClickListener;
+    private final List<ListItem> listItemArray;
 
-    public DataAdapter(Context context, RecOnClickListener recOnClickListener, List<ListItem> listItemArray) {
-        this.context = context;
+    public DataAdapter(RecOnClickListener recOnClickListener, List<ListItem> listItemArray) {
         this.recOnClickListener = recOnClickListener;
         this.listItemArray = listItemArray;
     }
@@ -49,6 +42,10 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataHolder> {
 
     public class DataHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
+        private final TextView textView;
+        private final TextView titleView;
+        private final ImageView imageView;
+
         public DataHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.itemText);
@@ -60,7 +57,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataHolder> {
             textView.setText(item.getText());
             titleView.setText(item.getTitle());
             imageView.setImageResource(item.getImage());
-        };
+        }
 
         @Override
         public void onClick(View view) {
@@ -68,9 +65,4 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataHolder> {
         }
     }
 
-    public void updateList(List<ListItem> listArray) {
-        listItemArray.clear();
-        listItemArray.addAll(listArray);
-        notifyDataSetChanged();
-    }
 }
