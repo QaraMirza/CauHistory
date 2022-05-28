@@ -25,7 +25,6 @@ public class ImageArrays {
             0,
             0,
             0,
-            0,
             R.drawable.muradkaplanov,
             R.drawable.hamzatimragimov,
             R.drawable.alievshamil,
